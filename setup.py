@@ -36,6 +36,12 @@ setup(
             "add_two_ints_client_no_oop = my_py_pkg.add_two_ints_client_no_oop:main",
             # two ints client with oop
             "add_two_ints_client = my_py_pkg.add_two_ints_client:main",
+            # Hardware status publisher
+            "hw_status_publisher = my_py_pkg.hw_status_publisher:main",
+            # Led panel
+            "led_panel = my_py_pkg.led_panel:main",
+            # Battery
+            "battery = my_py_pkg.battery:main",
         ],
     },
 )

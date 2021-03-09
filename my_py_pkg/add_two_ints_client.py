@@ -13,6 +13,7 @@ class AddTwoIntsClientNode(Node):
         # You can call them mutliple times for here
         #self.call_add_two_ints_server(4, 3)
 
+    ### Start of template
     def call_add_two_ints_server(self, a, b):
         client = self.create_client(AddTwoInts, "add_two_ints")
         while not client.wait_for_service(1.0):
@@ -35,6 +36,7 @@ class AddTwoIntsClientNode(Node):
                     str(response.sum))
         except Exception as e:
             self.get_logger().error("Service call failed %r" % (e,))
+    ### End of template
 
  
 def main(args=None):
