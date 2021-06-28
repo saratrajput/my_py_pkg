@@ -17,7 +17,7 @@ class NumberPublisherNode(Node):
         self.publish_frequency_ = self.get_parameter("publish_frequency").value
         self.timer = self.create_timer(1 / self.publish_frequency_, self.publish_number)
         # Log that the publisher has started
-        self.get_logger().info("Robot News Station has been started.")
+        self.get_logger().info("Number publisher node has been started.")
 
     def publish_number(self):
         msg = Int64()
